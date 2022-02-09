@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +11,12 @@
     <?php
     session_start();
     if (!($_SESSION["pantalla1"]=='check')) {
-        header("location: ../index.php");
+        header("Location: ../index.php");
     }
     ?>
-    <h1>Adivina el segundo pokemon</h1>
+    <h1>Pantalla 1</h1>
     <form action="../proc/res.proc.php" method="post">
-        <input type="text" name="charmander" placeholder="Inserte pokemon...">
+        <input type="text" name="pokemon" placeholder="Inserte pokemon...">
         <input type="submit" name="pantalla1">
     </form>
     <?php

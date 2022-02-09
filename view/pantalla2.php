@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recogida de datos</title>
+    <title>Document</title>
 </head>
 <body>
-<?php
+    <?php
+    // recupero la sesión
     session_start();
     if (!($_SESSION["pantalla2"]=='check')) {
-        header("location: ../index.php");
+        header("Location: ../index.php");
     }
     ?>
-    <h1>salir</h1>
-    <a href="../proc/res.proc.php">click aquí</a>
+    <h1>Pantalla 2</h1>
+    <a href="../proc/replay.proc.php">Volver a jugar</a>
+
 </body>
 </html>

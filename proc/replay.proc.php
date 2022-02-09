@@ -1,4 +1,4 @@
 <?php
-session_destroy ();
-
-header('location: ../index.php?msg=25');
+session_start();
+session_destroy();
+header("Location: ../index.php");
